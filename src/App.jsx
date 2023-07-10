@@ -38,7 +38,7 @@ function App() {
                   <div className="crsl-dots" id="dot2"></div>
                   <div className="crsl-dots" id="dot3"></div>
                 </div>
-                <h1>
+                <h1 id="ts-text">
                   Example text whatever dominics uncle wants to put or get
                   something off google, it doesnt matter.
                 </h1>
