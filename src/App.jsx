@@ -26,21 +26,29 @@ function App() {
         <div id="r-con"></div>
       </section>
       <div id="body-container">
-        <section className="sec-cons" id="top-sec">
-          <div className="sec-top-con"></div>
+        <div id="body">
+                  <section className="sec-cons" id="top-sec">
+          <div className="sec-top-con" id="ts">
+            <img src="./src/photos/animals-1851535.jpg" id="ts-img"/>
+          </div>
+          <div className="sec-bot-con" id="bs">
+            <div id="crsl-con">
+              <div id="crsl">
+                <div className="crsl-dots" id="dot1"></div>
+                <div className="crsl-dots" id="dot2"></div>
+                <div className="crsl-dots" id="dot3"></div>
+              </div>
+            </div>
+          </div>
+        </section>
 
+        <section className="sec-cons">
+          <div className="sec-top-con"></div>
           <div className="sec-bot-con"></div>
         </section>
 
         <section className="sec-cons">
           <div className="sec-top-con"></div>
-
-          <div className="sec-bot-con"></div>
-        </section>
-
-        <section className="sec-cons">
-          <div className="sec-top-con"></div>
-
           <div className="sec-bot-con"></div>
         </section>
 
@@ -48,6 +56,7 @@ function App() {
           <div className="sec-top-con"></div>
           <div className="sec-bot-con"></div>
         </section>
+        </div>
       </div>
     </>
   );
