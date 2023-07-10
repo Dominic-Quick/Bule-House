@@ -23,7 +23,10 @@ body {
   background-attachment: fixed;
   align-items: center;
   justify-content: start;
+<<<<<<< HEAD
   background-image: linear-gradient(rgb(19, 18, 18) 0 20%, rgb(33, 33, 94));
+=======
+>>>>>>> 6bc1074171a2c2ae8b5dabe22c93466141d206d1
 }
 
 #body{
@@ -47,7 +50,10 @@ body {
   left: 0;
   right: 0;
   z-index: 1;
+<<<<<<< HEAD
   background-color: rgb(19, 18, 18);
+=======
+>>>>>>> 6bc1074171a2c2ae8b5dabe22c93466141d206d1
 }
 
 #l-con,#m-con,#r-con {
@@ -63,7 +69,7 @@ body {
 }
 
 #logo {
-  height: 5rem;
+  height: 5em;
   width: auto;
   aspect-ratio: 1/1;
   mix-blend-mode: color-dodge;
