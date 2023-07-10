@@ -153,6 +153,12 @@ body {
   box-shadow: 0 0 2em , 0 0 .5em white;
 }
 
+h1{
+  color: antiquewhite;
+  padding-top: 25%;
+
+}
+
 .sec-cons {
   display: flex;
   align-items: center;
@@ -170,4 +176,8 @@ body {
 
 .sec-bot-con {
   background-color: rgb(58, 58, 58);
+  display: flex;
+  flex-direction: column;
+  font-size: .7rem;
+  text-align: center;
 }
