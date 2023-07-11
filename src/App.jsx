@@ -27,35 +27,39 @@ function App() {
       </section>
       <div id="body-container">
         <div id="body">
-                  <section className="sec-cons" id="top-sec">
-          <div className="sec-top-con" id="ts">
-            <img src="./src/photos/animals-1851535.jpg" id="ts-img"/>
-          </div>
-          <div className="sec-bot-con" id="bs">
-            <div id="crsl-con">
-              <div id="crsl">
-                <div className="crsl-dots" id="dot1"></div>
-                <div className="crsl-dots" id="dot2"></div>
-                <div className="crsl-dots" id="dot3"></div>
+          <section className="sec-cons" id="top-sec">
+            <div className="sec-top-con" id="ts">
+              <img src="./src/photos/animals-1851535.jpg" id="ts-img" />
+            </div>
+            <div className="sec-bot-con" id="bs">
+              <div id="crsl-con">
+                <div id="crsl">
+                  <div className="crsl-dots" id="dot1"></div>
+                  <div className="crsl-dots" id="dot2"></div>
+                  <div className="crsl-dots" id="dot3"></div>
+                </div>
+                <h1 id="ts-text">
+                  Example text whatever dominics uncle wants to put or get
+                  something off google, it doesnt matter.
+                </h1>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <section className="sec-cons">
-          <div className="sec-top-con"></div>
-          <div className="sec-bot-con"></div>
-        </section>
+          <section className="sec-cons">
+            <div className="sec-top-con"></div>
+            <div className="sec-bot-con"></div>
+          </section>
 
-        <section className="sec-cons">
-          <div className="sec-top-con"></div>
-          <div className="sec-bot-con"></div>
-        </section>
+          <section className="sec-cons">
+            <div className="sec-top-con"></div>
+            <div className="sec-bot-con"></div>
+          </section>
 
-        <section className="sec-cons">
-          <div className="sec-top-con"></div>
-          <div className="sec-bot-con"></div>
-        </section>
+          <section className="sec-cons">
+            <div className="sec-top-con"></div>
+            <div className="sec-bot-con"></div>
+          </section>
         </div>
       </div>
     </>
