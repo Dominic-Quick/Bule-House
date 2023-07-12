@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  cursor: default;
 }
 
 body {
@@ -16,20 +17,17 @@ body {
 
 #body-container {
   width: 100%;
-  min-height: 1400px;
   min-height: 90vh;
   height: fit-content;
   display: flex;
   background-attachment: fixed;
   align-items: center;
   justify-content: start;
-  background-image: linear-gradient(rgb(19, 18, 18) 0 20%, rgb(33, 33, 94));
 }
 
 #body{
   width: 100%;
   height: 100%;
-  min-width: 1500px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,6 +45,22 @@ body {
   left: 0;
   right: 0;
   z-index: 1;
+  transition: linear .5s;
+  background-color: rgba(19, 18, 18, 0);
+}
+
+#colorbar{
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: blue;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  transition: linear .5s;
   background-color: rgb(19, 18, 18);
 }
 
@@ -63,11 +77,21 @@ body {
 }
 
 #logo {
-  height: 5em;
+  height: 25vh;
+  position: absolute;
+  top:3vh;
   width: auto;
   aspect-ratio: 1/1;
-  mix-blend-mode: color-dodge;
-  mix-blend-mode: lighten;
+  transition: linear .5s;
+}
+
+#logo-small{
+  height: 7vh;
+  position: absolute;
+  top:1.3vh;
+  width: auto;
+  aspect-ratio: 1/1;
+  transition: linear .5s;
 }
 
 #m-con {
@@ -80,8 +104,10 @@ body {
 }
 
 #tb-menu {
+  height: 100%;
+  width: 60%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-direction: row;
   list-style: none;
@@ -90,15 +116,16 @@ body {
 
 .menu-i {
   font-size: 1.5rem;
-  margin: 0 25%;
+  margin: 0 5%;
   transition: linear 0.3s;
-  color: rgba(226, 226, 226, 0.849);
+  color: rgb(226, 226, 226);
 }
 
 .menu-i:hover {
   color: rgb(146, 30, 30);
-  text-shadow: rgb(0, 0, 255) 0 0 30px, rgb(255, 255, 255) 0 0 15px;
+  text-shadow: rgb(0, 0, 255) 0 0 25px, rgb(255, 255, 255) 0 0 15px;
   transition: linear 0.3s;
+  cursor: pointer;
 }
 
 #r-con {
@@ -106,22 +133,26 @@ body {
 }
 
 #top-sec {
-  margin-top: 10vh;
-  height: 90vh;
+  height: 100vh;
 }
 #ts {
-  height: 65%;
+  height: 100%;
 }
 
 #ts-img {
   width: 100%;
   height: auto;
-
-  object-position: 0 -20vh;
+  object-position: 0 -10vh;
 }
 
 #bs {
   height: 35%;
+  width: 90%;
+  position: absolute;
+  background-color: rgba(43, 43, 43, 0.61);
+  box-shadow: 0 0 30px;
+  top: 60%;
+  left: 5%;
 }
 
 #crsl-con {
@@ -149,21 +180,36 @@ body {
 }
 
 .crsl-dots:hover,.crsl-dots.active{
-  background-color: rgba(192, 192, 192, 0.575);
-  box-shadow: 0 0 2em , 0 0 .5em white;
+  background-color: rgba(192, 192, 192, 0.856);
+  box-shadow: 0 0 5em , 0 0 1.5em white;
+  cursor: pointer;
 }
 
-h1{
-  color: antiquewhite;
-  padding-top: 25%;
+#main-text{
+  height: 85%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+#ts-text{
+  height: 100%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: aliceblue;
+  font-family: "Yellowtail", cursive;
+  font-size: 2vw;
 }
 
 .sec-cons {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 80%;
+  width: 100%;
   min-height: 90%;
   height: 60vh;
   background-color: rgb(255, 255, 255);
@@ -182,6 +228,8 @@ h1{
   text-align: center;
 }
 
-#ts-text{
-  background-color:brown;
+@media screen and (max-width: 1200px) {
+  #top-bar-con{
+    background-color: black;
+  }
 }
