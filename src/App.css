@@ -146,20 +146,24 @@ body {
 }
 
 #bs {
-  height: 35%;
+  height: fit-content;
+  padding-bottom: 3vh;
   width: 90%;
   position: absolute;
-  background-color: rgba(43, 43, 43, 0.61);
-  box-shadow: 0 0 30px;
-  top: 60%;
-  left: 5%;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(43, 43, 43, 0.815);
+  box-shadow: 0 0 3rem;
+  top: 60vh;
+  left: 5vw;
 }
 
 #crsl-con {
-  height: 15%;
-  width: 15%;
+  height: 5vh;
+  width: 10vw;
   position: relative;
-  left: 43.5%;
 }
 
 #crsl {
@@ -211,21 +215,35 @@ body {
   flex-direction: column;
   width: 100%;
   min-height: 90%;
-  height: 60vh;
-  background-color: rgb(255, 255, 255);
+  height: 100vh;
+  background-color: rgb(208, 208, 219);
 }
 
 .sec-top-con,.sec-bot-con {
   width: 100%;
   height: 50%;
+  box-shadow: -2 0 1rem;
+}
+
+#s-con{
+  display: flex;
 }
 
 .sec-bot-con {
-  background-color: rgb(58, 58, 58);
-  display: flex;
-  flex-direction: column;
-  font-size: .7rem;
-  text-align: center;
+
+  background-color: black;
+}
+
+#social{
+  width: 100%;
+  object-position: 0 -20vh;
+  z-index: -1;
+}
+
+#s-list-con{
+  width: 100%;
+  height: 100%;
+  background-color: aqua;
 }
 
 @media screen and (max-width: 1200px) {
