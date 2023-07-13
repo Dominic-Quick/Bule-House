@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 
 import "./App.css";
 import { useInView } from "react-intersection-observer";
+import TopBar from "./TopBar";
 
 
 
@@ -11,26 +12,7 @@ function App() {
   
   return (
     <>
-      <section id={`${visEl ? 'top-bar-con':'colorbar'}`}>
-        <div id="l-con">
-          <div id='logo-con'>
-            <img
-              src="src/photos/Logo-Photo.png"
-              id={`${visEl ? 'logo':'logo-small'}`}
-            />
-          </div>
-        </div>
-
-        <div id="m-con">
-          <ul id="tb-menu">
-            <li className="menu-i">home</li>
-            <li className="menu-i">about</li>
-            <li className="menu-i">services</li>
-          </ul>
-        </div>
-
-        <div id="r-con"></div>
-      </section>
+      <TopBar visEl = {visEl}/>
       <div id="body-container">
         <div id="body">
           <section ref={myRef}  className="sec-cons" id="top-sec">
@@ -51,7 +33,6 @@ function App() {
               </div>
             </div>
             </div>
-  
           </section>
 
           <section className="sec-cons">
