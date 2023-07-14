@@ -247,7 +247,121 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
-  #top-bar-con{
-    background-color: black;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+  body{
+    height: 100vh;
+    width: 100vw;
+}
+
+  #body-container{
+    height: 100vh;
+    width: 100%;
   }
+
+  #body{
+    width: 100%;
+    height: 100vh;
+  }
+
+  #top-bar-con {
+    height: 15vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    transition: linear .5s;
+  }
+
+  #colorbar {
+    height: 15vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    transition: linear .5s;
+  }
+
+  #l-con{
+    width: 20vw;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  #logo{
+    height: 10vh;
+    display: flex;
+
+  }
+
+  #m-con{
+    width: 60vw;
+  }
+
+  #r-con{
+    width: 20vw;
+  }
+
+  .menu-i{
+    display: none;
+    font-size: .5rem;
+
+  }
+
+  #top-sec {
+    height: 100vh;
+}
+  #ts {
+    height: 100%;
+}
+
+  #ts-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sec-bot-con {
+  display: flex;
+}
+
+.sec-cons {
+  width: 100%;
+  height: 100vh;
+}
+
+.sec-top-con {
+  width: 100%;
+  height: 100vh;
+}
+
+#bs {
+  position: absolute;
+  top: 50%;
+}
+
+#main-text {
+  width: 90%;
+  height: 100%;
+}
+
+#ts {
+  position: relative;
+  height: 100vh;
+}
+
+#ts-text {
+  font-size: .6rem;
+
+}
 }
