@@ -19,7 +19,13 @@ export default function TopBar({visEl}) {
           </ul>
         </div>
 
-        <div id="r-con"></div>
+        <div id="r-con">
+          <button id="menu-btn">
+            <div className="burger"></div>
+            <div className="burger"></div>
+            <div className="burger"></div>
+          </button>
+        </div>
       </section>
     </>
   );
