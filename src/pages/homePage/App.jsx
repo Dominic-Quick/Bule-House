@@ -17,9 +17,9 @@ function App() {
       <div id="body-container">
         <div id="body">
           <PageOpener myRef={myRef} />
-          <section className="sec-cons">
-            <div className="sec-top-con" id="s-con">
-              <img id="social" src="src/photos/hairdresser-6819532.png" />
+          <section className="sec-cons" id="media-mobile">
+            <div className="sec-top-con" id="media-con">
+              <img id="social-img" src="src/photos/hairdresser-6819532.png" />
               <div id="s-list-con">
                 <ul id="s-list">
                   <li className="s-list-item" id="facebook">
