@@ -27,7 +27,7 @@ body {
   justify-content: start;
 }
 
-#body{
+#body {
   width: 100%;
   height: 100%;
   display: flex;
@@ -37,21 +37,6 @@ body {
 }
 
 #top-bar-con {
-  height: 15vh;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  background-color: blue;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  transition: linear .5s;
-  background-color: rgba(19, 18, 18, 0);
-}
-
-#colorbar{
   height: 10vh;
   width: 100%;
   display: flex;
@@ -62,11 +47,28 @@ body {
   left: 0;
   right: 0;
   z-index: 1;
-  transition: linear .5s;
+  transition: linear 0.5s;
+  background-color: rgba(19, 18, 18, 0);
+}
+
+#colorbar {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: blue;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  transition: linear 0.5s;
   background-color: #131313;
 }
 
-#l-con,#m-con,#r-con {
+#l-con,
+#m-con,
+#r-con {
   min-height: 10vh;
 }
 
@@ -84,16 +86,16 @@ body {
   top: 3vh;
   width: auto;
   aspect-ratio: 1/1;
-  transition: linear .5s;
+  transition: linear 0.5s;
 }
 
-#logo-small{
+#logo-small {
   height: 7vh;
   position: absolute;
   top: 1.3vh;
   width: auto;
   aspect-ratio: 1/1;
-  transition: linear .5s;
+  transition: linear 0.5s;
 }
 
 #m-con {
@@ -184,13 +186,14 @@ body {
   background-color: rgba(0, 0, 0, 0.863);
 }
 
-.crsl-dots:hover,.crsl-dots.active{
+.crsl-dots:hover,
+.crsl-dots.active {
   background-color: rgba(192, 192, 192, 0.856);
-  box-shadow: 0 0 5em , 0 0 1.5em white;
+  box-shadow: 0 0 5em, 0 0 1.5em white;
   cursor: pointer;
 }
 
-#main-text{
+#main-text {
   height: 85%;
   width: 100%;
   display: flex;
@@ -198,7 +201,7 @@ body {
   justify-content: center;
 }
 
-#ts-text{
+#ts-text {
   height: 100%;
   width: 90%;
   display: flex;
@@ -220,30 +223,30 @@ body {
   /* background-color: rgb(208, 208, 219); */
 }
 
-.sec-top-con,.sec-bot-con {
+.sec-top-con,
+.sec-bot-con {
   width: 100%;
   height: 50%;
   box-shadow: -2 0 1rem;
 }
 
-#media-con{
- position: relative;
- background-color: rgba(245, 222, 179, 0);
+#media-con {
+  position: relative;
+  background-color: rgba(245, 222, 179, 0);
 }
 
 .sec-bot-con {
-
-background-color: rgb(19, 18, 18);
+  background-color: rgb(19, 18, 18);
 }
 
-#social-img{
+#social-img {
   width: 100%;
   height: 100%;
   object-position: 0 -20vh;
   object-fit: cover;
 }
 
-#s-list-con{
+#s-list-con {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 255, 255, 0);
@@ -251,12 +254,12 @@ background-color: rgb(19, 18, 18);
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
-  position:absolute;
+  position: absolute;
   top: 0;
   left: 0;
 }
 
-.sec-head{
+.sec-head {
   height: 20%;
   width: 40%;
   padding-right: 2vw;
@@ -264,12 +267,12 @@ background-color: rgb(19, 18, 18);
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0 1vw #131313 ;
+  box-shadow: 0 0 1vw #131313;
   color: #eadbdb;
   background-color: #13131371;
 }
 
-#s-list{
+#s-list {
   height: 60%;
   width: 40%;
   display: flex;
@@ -280,7 +283,7 @@ background-color: rgb(19, 18, 18);
   position: relative;
 }
 
-.s-list-item{
+.s-list-item {
   width: 6vw;
   aspect-ratio: 1/1;
   border-radius: 50%;
@@ -290,13 +293,13 @@ background-color: rgb(19, 18, 18);
   isolation: isolate;
   box-shadow: 0 0 2vw;
 }
-.img-con:hover{
-  width: 5.5vw;
+.s-list-item:hover > .img-con {
+  width: 80%;
   box-shadow: 0 0 1vw;
 }
 
-.img-con{
-  width: 6vw;
+.img-con {
+  width: 100%;
   aspect-ratio: 1/1;
   background-color: aliceblue;
   border-radius: 50%;
@@ -306,76 +309,64 @@ background-color: rgb(19, 18, 18);
   isolation: isolate;
 }
 
-#facebook-img{
+#facebook-img {
   height: 100%;
   width: 100%;
-  object-fit:cover;
+  object-fit: cover;
 }
 
-#email-img{
+#email-img {
   height: 50%;
   width: 60%;
-  object-fit:scale-down,contain;
+  object-fit: scale-down, contain;
   mix-blend-mode: color-burn;
   mix-blend-mode: darken;
 }
 
-#phone-img{
+#phone-img {
   height: 100%;
   width: 100%;
-  object-fit:cover;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 1200px) {
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
 
   body {
-  min-height: 100vh;
-  height: fit-content;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
+    min-height: 100vh;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 
   #body-container {
-  width: 100%;
-  min-height: 90vh;
-  height: fit-content;
-  display: flex;
-  background-attachment: fixed;
-  align-items: center;
-  justify-content: start;
+    width: 100%;
+    min-height: 90vh;
+    height: fit-content;
+    display: flex;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: start;
   }
 
   #body {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
   }
 
   #top-bar-con {
-  height: 15vh;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  transition: linear .5s;
-  background-color: rgba(19, 18, 18, 0);
-  }
-
-  #colorbar {
-    height: 15vh;
+    height: 0vw;
+    min-height: 10vh;
+    max-height: 15vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -384,29 +375,44 @@ background-color: rgb(19, 18, 18);
     left: 0;
     right: 0;
     z-index: 1;
-    transition: linear .5s;
+    transition: linear 0.5s;
+    background-color: rgba(19, 18, 18, 0);
+  }
+
+  #colorbar {
+    height: 30vw;
+    max-height: 15vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    transition: linear 0.5s;
     background-color: rgb(19, 18, 18);
   }
 
-  #l-con,#m-con,#r-con {
-  min-height: 15vh;
-}
+  #l-con,
+  #m-con,
+  #r-con {
+    min-height: 15vh;
+  }
 
-  #l-con{
+  #l-con {
     width: 20vw;
     display: flex;
     padding: 0;
     align-items: center;
     justify-content: center;
-
   }
 
-  #logo{
-    height: 18vh;
-    top: 5%;
-    left: 5%;
+  #logo {
+    height: 30vw;
+    top: 15vh;
+    left: 35vw;
     display: flex;
-
   }
 
   #logo-small {
@@ -433,10 +439,10 @@ background-color: rgb(19, 18, 18);
     align-items: center;
     justify-content: space-evenly;
     aspect-ratio: 1/1;
-    height: 6vh;
+    height: 10vw;
+    max-height: 6vh;
     background-color: rgba(0, 0, 0, 0);
     border: none;
-
   }
 
   .burger {
@@ -447,88 +453,96 @@ background-color: rgb(19, 18, 18);
 
   .menu-i {
     display: none;
-    font-size: .5rem;
-
+    font-size: 0.5rem;
   }
 
   #top-sec {
     height: 100vh;
-}
+  }
+
   #ts {
     height: 100%;
-}
+  }
 
   #ts-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
+  }
 
-.sec-bot-con {
-  display: flex;
-}
+  .sec-bot-con {
+    display: flex;
+  }
 
-.media-cons {
-  width: 100%;
-  height: 100vh;
-}
+  .media-cons {
+    width: 100%;
+    height: 100vh;
+  }
 
-.sec-top-con {
-  width: 100%;
-  height: 100vh;
-}
+  .sec-top-con {
+    width: 100%;
+    height: fit-content;
+  }
 
-#bs {
-  position: absolute;
-  top: 50%;
-  height: fit-content;
-}
+  #bs {
+    position: absolute;
+    top: 60vh;
+    height: fit-content;
+  }
 
-#crsl-con {
-  top: .5vw;
-  width: 25vw;
-  height: 6.5vh;
-}
+  #crsl-con {
+    top: 0.5vw;
+    width: 35vw;
+    height: 6.5vh;
+  }
 
-#main-text {
-  width: 90%;
-  height: 100%;
-}
+  .crsl-dots{
+    height: 6.5vw;
+  }
 
-#ts {
-  position: relative;
-  height: 100vh;
-}
+  #main-text {
+    width: 90%;
+    height: 100%;
+  }
 
-#ts-text {
-  font-size: 3vw;
+  #ts {
+    position: relative;
+    height: 100vh;
+  }
 
-}
+  #ts-text {
+    font-size: 3vw;
+  }
 
-.sec-cons {
-  height: 100vh;
-  width: 100vw;
-}
+  .sec-cons {
+    height: 100vh;
+    width: 100vw;
+  }
 
-#media-mobile {
-  height: 25vh;
-}
+  #media-mobile {
+    height: 50vw;
+  }
 
-#social-img {
-  height: 100%;
-  width: 100%;
-  object-position: 0 0vh;
-  object-fit: cover;
-}
+  #social-img {
+    height: 100%;
+    width: 100%;
+    object-position: 0 0vh;
+    object-fit: cover;
+  }
 
-#s-list-con {
-height: 60%;
-  
-}
+  #s-list-con {
+    height: 65%;
+  }
 
-.sec-head {
-  height: 40%;
-}
+  #s-list{
+    width: 90%;
+  }
 
+  .s-list-item{
+    width: 15vw;
+  }
 
+  .sec-head {
+    height: 25%;
+  }
 }

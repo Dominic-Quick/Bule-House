@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import "./App.css";
 import { useInView } from "react-intersection-observer";
 import TopBar from "./TopBar";
-import PageOpener from "../PageOpener";
+import PageOpener from "./PageOpener";
 
 
 
@@ -23,18 +23,18 @@ function App() {
               <div id="s-list-con">
                 <ul id="s-list">
                   <li className="s-list-item" id="facebook">
-                    <div className="img-con">
+                    <a className="img-con" href="https://www.facebook.com/thebluehouse314">
                       <img id="facebook-img" src="src/photos/facebook.png" />
-                    </div>
+                    </a>
                   </li>
                   <li className="s-list-item" id="email">
-                    <div className="img-con">
+                    <a className="img-con" href="mailto:dominic101500@gmail.com">
                       <img id="email-img" src="src/photos/gmail.png" />
-                    </div>
+                    </a>
                   </li>
                   <li className="s-list-item" id="phone">
                     <div className="img-con">
-                      <img id="phone-img" src="src/photos/phone.png" />
+                      <img id="phone-img" src="src/photos/phone.png"  />
                     </div>
                   </li>
                 </ul>
