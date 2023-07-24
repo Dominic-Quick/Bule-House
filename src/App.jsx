@@ -8,7 +8,6 @@ import LogIn from "./pages/login/LogIn";
 import Service from "./pages/service/Service";
 
 function App() {
-  // Google Api Key: AIzaSyC3jRCRtzYCEVylTjDVX5EgeQjMMQ2WX5M
   const { ref: myRef, inView: visEl } = useInView({ threshold: 0.6 });
   return (
     <>
