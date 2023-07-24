@@ -1,6 +1,5 @@
 export default function PageOpener({myRef}){
     return (
-        <>
         <section ref={myRef}  className="sec-cons" id="top-sec">
             <div className="sec-top-con" id="ts">
               <img src="./src/photos/animals-1851535.jpg" id="ts-img" />
@@ -20,6 +19,5 @@ export default function PageOpener({myRef}){
             </div>
             </div>
           </section>
-        </>
     )
 }

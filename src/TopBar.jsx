@@ -1,3 +1,5 @@
+import { Link , useMatch, useResolvedPath } from "react-router-dom";
+
 export default function TopBar({visEl}) {
   return (
     <>
@@ -13,9 +15,9 @@ export default function TopBar({visEl}) {
 
         <div id="m-con">
           <ul id="tb-menu">
-            <li className="menu-i">home</li>
-            <li className="menu-i">about</li>
-            <li className="menu-i">services</li>
+            <CustomeLink to={"/"}>Home</CustomeLink>
+            <CustomeLink to={"/Service"}>Services</CustomeLink>
+            <CustomeLink to={"/LogIn"}>LogIn</CustomeLink>
           </ul>
         </div>
 
@@ -29,4 +31,14 @@ export default function TopBar({visEl}) {
       </section>
     </>
   );
+}
+
+function CustomeLink({ to, children}) {
+  const resolvedPath = useResolvedPath(to)
+  const isActive = useMatch({ path: resolvedPath.pathname, end: true });
+  return (
+    <li className={isActive ? "active" : "menu-i"}>
+      <Link to={to} >{children}</Link>
+    </li>
+  )
 }

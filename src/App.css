@@ -5,6 +5,10 @@
   padding: 0;
   box-sizing: border-box;
   cursor: default;
+  text-decoration: none;
+  color: inherit;
+  list-style: none;
+  border-style: none;
   font-family: "Yellowtail", cursive;
 }
 
@@ -114,18 +118,24 @@ body {
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
-  list-style: none;
+  color: rgb(226, 226, 226);
 }
 
 .menu-i {
   font-size: 1.5rem;
   margin: 0 5%;
+  text-decoration: none;
   transition: linear 0.3s;
-  color: rgb(226, 226, 226);
+}
+
+.active{
+  font-size: 1.5rem;
+  margin: 0 5%;
+  text-decoration: .5rem overline rgb(156, 32, 32);
 }
 
 .menu-i:hover {
-  color: rgb(146, 30, 30);
+  color: rgb(156, 32, 32);
   text-shadow: rgb(0, 0, 255) 0 0 25px, rgb(255, 255, 255) 0 0 15px;
   transition: linear 0.3s;
   cursor: pointer;
@@ -186,8 +196,7 @@ body {
   background-color: rgba(0, 0, 0, 0.863);
 }
 
-.crsl-dots:hover,
-.crsl-dots.active {
+.crsl-dots:hover{
   background-color: rgba(192, 192, 192, 0.856);
   box-shadow: 0 0 5em, 0 0 1.5em white;
   cursor: pointer;
@@ -295,13 +304,17 @@ body {
 }
 .s-list-item:hover > .img-con {
   width: 80%;
-  box-shadow: 0 0 1vw;
+  box-shadow: 0 0 .9rem #0a02af;
+  transition: linear .15s;
 }
 
 .img-con {
   width: 100%;
   aspect-ratio: 1/1;
   background-color: aliceblue;
+  color: #131313;
+  transition: linear .25s;
+  
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -546,3 +559,4 @@ body {
     height: 25%;
   }
 }
+
