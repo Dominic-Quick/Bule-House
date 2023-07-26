@@ -1,0 +1,256 @@
+#top-bar-con {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: blue;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  transition: linear 0.5s;
+  background-color: #131313;
+}
+
+#colorbar {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: blue;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  transition: linear 0.5s;
+  background-color: rgba(19, 18, 18, 0);
+}
+
+#l-con,
+#m-con,
+#r-con {
+  min-height: 10vh;
+}
+
+#l-con {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 20%;
+  padding-left: 4%;
+}
+
+#logo {
+  height: 7vh;
+  position: absolute;
+  top: 1.3vh;
+  width: auto;
+  aspect-ratio: 1/1;
+  transition: linear 0.5s;
+}
+
+#logo-small {
+  height: 25vh;
+  position: absolute;
+  top: 3vh;
+  width: auto;
+  aspect-ratio: 1/1;
+  transition: linear 0.5s;
+}
+
+#m-con {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.tb-menu {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  color: rgb(226, 226, 226);
+}
+
+.menu-i {
+  font-size: 1.5rem;
+  margin: 0 5%;
+  text-decoration: none;
+  transition: linear 0.3s;
+}
+
+.active {
+  font-size: 1.5rem;
+  margin: 0 5%;
+  text-decoration: 0.5rem overline rgb(156, 32, 32);
+}
+
+.menu-i a:hover {
+  color: rgb(156, 32, 32);
+  text-shadow: rgb(0, 0, 255) 0 0 25px, rgb(255, 255, 255) 0 0 15px;
+  transition: linear 0.3s;
+  cursor: pointer;
+}
+
+#r-con {
+  width: 20%;
+}
+
+@media screen and (max-width: 1200px) {
+  #top-bar-con {
+    height: 30vw;
+    max-height: 15vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    transition: linear 0.5s;
+    background-color: rgb(19, 18, 18);
+  }
+
+  #colorbar {
+    height: 0vw;
+    min-height: 10vh;
+    max-height: 15vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    transition: linear 0.5s;
+    background-color: rgba(19, 18, 18, 0);
+  }
+
+  #l-con,
+  #m-con,
+  #r-con {
+    min-height: 15vh;
+  }
+
+  #l-con {
+    width: 20vw;
+    display: flex;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #logo {
+    position: absolute;
+    height: 9vh;
+    top: 15%;
+    left: 5%;
+  }
+
+  #logo-small {
+    height: 30vw;
+    top: 15vh;
+    left: 35vw;
+    display: flex;
+  }
+
+  #m-con {
+    width: 60vw;
+    position: relative;
+  }
+
+  #link {
+    width: 100vw;
+    height: 10%;
+  }
+
+  .menu-i {
+    font-size: 8vw;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    z-index: 0;
+    border-top: solid 1px gray;
+    padding: 2vh 0;
+  }
+
+  .active {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    text-align: center;
+    padding: 2vh 0;
+    font-size: 8vw;
+    text-decoration: none;
+    border-top: solid 1px gray;
+    background-color: rgb(77, 77, 77);
+  }
+
+  .tb-menu {
+    position: fixed;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    background-color: #131313;
+    height: 100vh;
+    padding-top: 15vh;
+    right: -100vw;
+    top: 0;
+    z-index: 10;
+    transition: linear 0.5s;
+  }
+
+  .tb-menu-active {
+    position: fixed;
+    background-color: #131313;
+    height: 100vh;
+    padding-top: 15vh;
+    right: 0;
+    top: 0;
+    transition: linear 0.5s;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(226, 226, 226);
+    z-index: 10;
+  }
+
+  #r-con {
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #menu-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    aspect-ratio: 1/1;
+    height: 10vw;
+    max-height: 6vh;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    z-index: 10;
+  }
+
+  .burger {
+    height: 10%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+  }
+}

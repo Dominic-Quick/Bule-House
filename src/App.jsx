@@ -8,7 +8,7 @@ import LogIn from "./pages/login/LogIn";
 import Service from "./pages/service/Service";
 
 function App() {
-  const { ref: myRef, inView: visEl } = useInView({ threshold: 0.6 });
+  const { ref: myRef, inView: visEl } = useInView({ threshold: 0.8 });
   return (
     <>
       <TopBar visEl={visEl} />

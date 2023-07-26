@@ -1,3 +1,4 @@
+import "./home-styles/pageOpener.css"
 export default function PageOpener({myRef}){
     return (
         <section ref={myRef}  className="sec-cons" id="top-sec">

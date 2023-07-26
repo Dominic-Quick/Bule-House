@@ -1,0 +1,76 @@
+#top-sec {
+    height: 100vh;
+  }
+  
+  #ts {
+    height: 100%;
+  }
+  
+  #ts-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  #bs {
+    height: fit-content;
+    padding-bottom: 3vh;
+    width: 90%;
+    position: absolute;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    background-color: #131313d4;
+    box-shadow: 0 0 3rem;
+    top: 60vh;
+    left: 5vw;
+  }
+  
+  #crsl-con {
+    height: 5vh;
+    width: 10vw;
+    position: relative;
+  }
+  
+  #crsl {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+  }
+  
+  .crsl-dots {
+    height: 50%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.863);
+  }
+  
+  .crsl-dots:hover{
+    background-color: rgba(192, 192, 192, 0.856);
+    box-shadow: 0 0 5em, 0 0 1.5em white;
+    cursor: pointer;
+  }
+  
+  #main-text {
+    height: 85%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #ts-text {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: aliceblue;
+    font-size: 2vw;
+  }
