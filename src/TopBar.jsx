@@ -18,6 +18,11 @@ export default function TopBar({ visEl }) {
             <CustomeLink to={"/"} >Home</CustomeLink>
             <CustomeLink to={"/Service"}>Services</CustomeLink>
             <CustomeLink to={"/LogIn"} >LogIn</CustomeLink>
+            <div id="social-opener-container">
+              <div class='social-btns'></div>
+              <div class='social-btns'></div>
+              <div class='social-btns'></div>
+            </div>
           </ul>
         </div>
 
