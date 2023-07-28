@@ -99,8 +99,30 @@
   cursor: pointer;
 }
 
+@media screen and (min-width: 1200px) {
+  
+
+  #social-opener-container {
+    display: none;
+  }
+
+  .social-btns {
+    display: none;
+  }
+
+  .scl-btn-img {
+    display: none;
+  }
+
+  #phone-scl {
+    display: none;
+  }
+
+
 #r-con {
   width: 20%;
+}
+
 }
 
 @media screen and (max-width: 1200px) {
