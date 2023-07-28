@@ -9,20 +9,39 @@ export default function TopBar({ visEl }) {
       <section id={`${visEl ? "colorbar" : "top-bar-con"}`}>
         <div id="l-con">
           <div id="logo-con">
-            <img src="src/photos/Logo-Photo.png" id={`${visEl ? "logo-small" : "logo"}`}/>
+            <img
+              src="src/photos/Logo-Photo.png"
+              id={`${visEl ? "logo-small" : "logo"}`}
+            />
           </div>
         </div>
 
         <div id="m-con">
           <ul className={toggleBtn ? "tb-menu-active" : "tb-menu"}>
-            <CustomeLink to={"/"} >Home</CustomeLink>
+            <CustomeLink to={"/"}>Home</CustomeLink>
             <CustomeLink to={"/Service"}>Services</CustomeLink>
-            <CustomeLink to={"/LogIn"} >LogIn</CustomeLink>
-            <div id="social-opener-container">
-              <div class='social-btns'></div>
-              <div class='social-btns'></div>
-              <div class='social-btns'></div>
-            </div>
+            <CustomeLink to={"/LogIn"}>LogIn</CustomeLink>
+            <li id="social-opener-container">
+              <div class="social-btns">
+                <a href="https://www.facebook.com/thebluehouse314">
+                  <img
+                    className="scl-btn-img"
+                    src="./src/photos/facebook.png"
+                    alt="Facebook"
+                  />
+                </a>
+              </div>
+              <div class="social-btns">
+                <a href="mailto:dominic101500@gmail.com">
+                  <img className="scl-btn-img" src="./src/photos/gmail.png" alt="Email" />
+                </a>
+              </div>
+              <div class="social-btns">
+                <a href="">
+                  <img className="scl-btn-img" id="phone-scl" src="./src/photos/phone.png" alt="Phone" />
+                </a>
+              </div>
+            </li>
           </ul>
         </div>
 
