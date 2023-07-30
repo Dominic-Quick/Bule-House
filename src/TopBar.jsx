@@ -9,10 +9,12 @@ export default function TopBar({ visEl }) {
       <section id={`${visEl ? "colorbar" : "top-bar-con"}`}>
         <div id="l-con">
           <div id="logo-con">
+            <Link to={"/"}>
             <img
               src="src/photos/Logo-Photo.png"
               id={`${visEl ? "logo-small" : "logo"}`}
             />
+            </Link>
           </div>
         </div>
 
@@ -27,18 +29,17 @@ export default function TopBar({ visEl }) {
                   <img
                     className="scl-btn-img"
                     src="./src/photos/facebook.png"
-                    alt="Facebook"
                   />
                 </a>
               </div>
               <div class="social-btns">
                 <a href="mailto:dominic101500@gmail.com">
-                  <img className="scl-btn-img" src="./src/photos/gmail.png" alt="Email" />
+                  <img className="scl-btn-img" id="email-menu" src="./src/photos/gmail.png"/>
                 </a>
               </div>
               <div class="social-btns">
                 <a href="">
-                  <img className="scl-btn-img" id="phone-scl" src="./src/photos/phone.png" alt="Phone" />
+                  <img className="scl-btn-img" id="phone-scl" src="./src/photos/phone.png"/>
                 </a>
               </div>
             </li>
@@ -72,7 +73,6 @@ function CustomeLink({ to, children }) {
   const resolvedPath = useResolvedPath(to);
   const isActive = useMatch({ path: resolvedPath.pathname, end: true });
   return (
-    
       <Link id="link" to={to}>
           <li className={isActive ? "active" : "menu-i"}>{children}</li>
       </Link>

@@ -69,6 +69,14 @@
   font-weight: bolder;
 }
 
+#social-opener-container {
+  display: none;
+}
+
+#r-con {
+  width: 20%;
+}
+
 .tb-menu {
   height: 100%;
   width: 60%;
@@ -97,32 +105,6 @@
   text-shadow: rgb(0, 0, 255) 0 0 25px, rgb(255, 255, 255) 0 0 15px;
   transition: linear 0.3s;
   cursor: pointer;
-}
-
-@media screen and (min-width: 1200px) {
-  
-
-  #social-opener-container {
-    display: none;
-  }
-
-  .social-btns {
-    display: none;
-  }
-
-  .scl-btn-img {
-    display: none;
-  }
-
-  #phone-scl {
-    display: none;
-  }
-
-
-#r-con {
-  width: 20%;
-}
-
 }
 
 @media screen and (max-width: 1200px) {
@@ -211,7 +193,7 @@
   #social-opener-container {
     width: 75vw;
     height: 40vh;
-    background-color: rgb(19,18,18);
+    background-color: rgb(19, 18, 18);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -220,24 +202,34 @@
   }
 
   .social-btns {
-    width: 10vw;
-    height: 10vw;
+    width: 15vw;
+    aspect-ratio: 1/1;
     background-color: aliceblue;
-    border-radius: 25%;
+    border-radius: 50%;
+  }
+
+  .social-btns a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
   }
 
   .scl-btn-img {
     width: 100%;
     height: 100%;
     mix-blend-mode: luminosity;
-    object-fit: contain;
+    object-fit: cover;
+    border-radius: 50%;
     aspect-ratio: 1/1;
   }
 
-  #phone-scl {
-    width: 100%;
-    height: 100%;
-
+  #email-menu{
+    height: 50%;
+    width: 60%;
+    object-fit: scale-down;
+    border-radius: 0;
   }
 
   .active {
