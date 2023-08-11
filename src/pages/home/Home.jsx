@@ -3,7 +3,7 @@ import Map from "./Map";
 
 export default function Home({ myRef }) {
   return (
-    <div id="body">
+    <div className="body">
       <PageOpener myRef={myRef} />
       <section className="sec-cons" id="media-mobile">
         <div className="sec-top-con" id="media-con">

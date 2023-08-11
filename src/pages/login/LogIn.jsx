@@ -1,9 +1,11 @@
-
+import "./login-styles/login.css"
 export default function LogIn() {
   return (
-    <div id="body">
+    <div className="body">
       <div id="login-con">
-        <div id="login">log in</div>
+        <div id="login">
+          
+        </div>
       </div>
     </div>
   )

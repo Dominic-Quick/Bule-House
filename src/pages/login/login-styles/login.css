@@ -1,0 +1,12 @@
+#login-con {
+    background-color: aqua;
+    width: 25vw;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+}
+
+#login {
+    
+}
