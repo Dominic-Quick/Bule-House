@@ -48,7 +48,7 @@ export default function TopBar({ visEl }) {
 
         <div id="r-con">
           <button
-            id="menu-btn"
+            className={toggleBtn ? "menu-btn open" : "menu-btn"}
             onClick={() => {
               if (toggleBtn) {
                 setToggleBtn(false);
@@ -59,8 +59,6 @@ export default function TopBar({ visEl }) {
               }
             }}
           >
-            <div className="burger"></div>
-            <div className="burger"></div>
             <div className="burger"></div>
           </button>
         </div>
