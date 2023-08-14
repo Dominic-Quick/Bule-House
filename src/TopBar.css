@@ -335,7 +335,6 @@
 
  /* ANIMATION */
  .menu-btn.open .burger {
-  transform: rotateX(45);
   background: transparent;
   box-shadow: none;
  }

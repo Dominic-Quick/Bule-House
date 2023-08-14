@@ -35,7 +35,7 @@
 #login-title {
     width: 100%;
     height: 100%;
-    font-size: 2.2rem;
+    font-size: 8vw;
     text-align: center;
     display: flex;
     align-items: center;
@@ -43,8 +43,8 @@
 }
 
 #inputs-con {
-    width: 100%;
-    height: 65%;
+    width: 75vw;
+    height: 28vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -52,11 +52,11 @@
 }
 
 #username-con,#password-con {
-    width: 80%;
-    height: 18%;
+    width: 65vw;
+    height: 2.5vh;
     display: flex;
     flex-direction: column;
-    font-size: 1.4rem;
+    font-size: 3.5vw;
 }
 
 #username,#password {
@@ -67,12 +67,12 @@
 
 
 #forgot-password {
-font-size: 1.2rem;
+font-size: 4vw;
 }
 
 #submit-con {
-width: 100%;
-height: 35%;
+width: 75vw;
+height: 16vh;
 display: flex;
 flex-direction: column;
 justify-content: space-evenly;
@@ -80,30 +80,48 @@ align-items: center;
 }
 
 #login-btn-con {
-width: 100%;
-height: 25%;
+width: 20vw;
+height: 5vh;
 display: flex;
 justify-content: center;
 align-items: center;
 }
 
 #login-btn {
-    width: 25%;
+    width: 100%;
     height: 100%;
-    font-size: 1.5rem;
+    font-size: 4vw;
     background-color: crimson;
     border-radius: 5%;
 }
 
 #sign-up-con {
-    width: 100%;
-    height: 20%;
+    width: 60vw;
+    height: 8vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 4vw;
 }
 
 #sign-up a {
     color: blue;
     text-decoration: underline;
+}
+
+@media screen and (max-width: 1200px) {
+    .login-body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#login-con {
+
+    width: 80vw;
+    height: 50vh;
+}
+
 }
