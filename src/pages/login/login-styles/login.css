@@ -9,7 +9,120 @@
 #login-con {
 
     width: 25vw;
-    height: 60vh;
+    height: 65vh;
+}
+
+#login {
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(0, 24, 122) 0 0 5vw;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 2%;
+}
+
+#login-title-con {
+    width: 25vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#login-title {
+    width: 100%;
+    height: 100%;
+    font-size: 3.5vw;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#inputs-con {
+    width: 25vw;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#username-con,#password-con {
+    width: 20vw;
+    height: 2.5vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2vw;
+}
+
+#username,#password {
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid #000000;
+}
+
+
+#forgot-password {
+font-size: 1.2vw;
+}
+
+#submit-con {
+width: 25vw;
+height: 20vh;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+}
+
+#login-btn-con {
+width: 8vw;
+height: 5vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#login-btn {
+    width: 100%;
+    height: 100%;
+    font-size: 2vw;
+    background-color: crimson;
+    border-radius: 5%;
+
+}
+
+#sign-up-con {
+    width: 25vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+}
+
+#sign-up a {
+    color: blue;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1200px) {
+.login-body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#login-con {
+
+    width: 80vw;
+    height: 50vh;
 }
 
 #login {
@@ -107,21 +220,6 @@ align-items: center;
 #sign-up a {
     color: blue;
     text-decoration: underline;
-}
-
-@media screen and (max-width: 1200px) {
-    .login-body {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#login-con {
-
-    width: 80vw;
-    height: 50vh;
 }
 
 }
